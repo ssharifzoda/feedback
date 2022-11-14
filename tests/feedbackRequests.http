@@ -1,0 +1,41 @@
+### Get All countries
+GET localhost:8080/countries
+Accept: application/json
+
+
+
+
+### Get coutry cities
+GET localhost:8080/counlist?countryid=1
+Accept: application/json
+
+
+
+
+### Get all local-services
+GET localhost:8080/serlist?cityid=1
+Accept: application/json
+
+
+
+### Creat Feedback
+POST localhost:8080/
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+
+--WebAppBoundary
+Content-Disposition: form-data; name="feedback"
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "country_id": 1,
+  "city_id": 1,
+  "massage": "Good"
+}
+--WebAppBoundary
+Content-Disposition: form-data; name="image"; filename="t.jpg"
+Content-Type: application/octet-stream
+
+< D:\Мои фотки\test.jpg
+--WebAppBoundary--

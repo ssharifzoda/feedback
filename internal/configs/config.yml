@@ -1,0 +1,10 @@
+port: "8080"
+
+db:
+  Host: "localhost"
+  Port: 5432
+  Username: "app"
+  DBName: "postgres"
+
+storage:
+  imagePath: "D://images"

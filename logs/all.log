@@ -1,0 +1,38 @@
+{"file":"main.go: 19","func":"main.main()","level":"fatal","msg":"error initializing env value: open .env: The system cannot find the file specified."}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"feedbackService.go: 47","func":"feedback/internal/service.(*FeedbackService).SaveImage()","level":"info","msg":"open D:\\images\\a31844ec-59e0-48c4-a1c3-b00a47721a72.jpg: The system cannot find the path specified."}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"open D:\\images\\a31844ec-59e0-48c4-a1c3-b00a47721a72.jpg: The system cannot find the path specified."}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
