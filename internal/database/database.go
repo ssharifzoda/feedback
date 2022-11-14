@@ -8,7 +8,6 @@ import (
 type Feedback interface {
 	GetAllCountries() ([]types.Countries, error)
 	GetCountryCities(countryId int) ([]types.Cities, error)
-	GetAllLocalServices(cityID int) ([]types.Services, error)
 	CreateFeedback(feedback *types.FeedBacks) error
 }
 

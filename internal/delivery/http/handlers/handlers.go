@@ -7,8 +7,8 @@ import (
 )
 
 const (
-	methodGet = "GET"
-	methodPos = "POST"
+	methodGet  = "GET"
+	methodPost = "POST"
 )
 
 type Handler struct {
@@ -23,9 +23,7 @@ func NewHandler(s *service.Service) *Handler {
 func (h *Handler) InitRoutes() *mux.Router {
 	handlers := mux.NewRouter()
 	handlers.HandleFunc("/countries", h.getAllCountries).Methods(methodGet)
-	handlers.HandleFunc("/counlist", h.GetCountryCities).Methods(methodGet)
-	handlers.HandleFunc("/serlist", h.getAllLocalServices).Methods(methodGet)
-	handlers.HandleFunc("/", h.CreateFeedback).Methods(methodPos)
-
+	handlers.HandleFunc("/countlist", h.GetCountryCities).Methods(methodGet)
+	handlers.HandleFunc("/", h.CreateFeedback).Methods(methodPost)
 	return handlers
 }

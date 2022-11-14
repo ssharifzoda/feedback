@@ -29,10 +29,6 @@ func (f *FeedbackService) GetCountryCities(countryId int) ([]types.Cities, error
 	return f.db.GetCountryCities(countryId)
 }
 
-func (f *FeedbackService) GetAllLocalServices(cityID int) ([]types.Services, error) {
-	return f.db.GetAllLocalServices(cityID)
-}
-
 func (f *FeedbackService) CreateFeedback(feedback *types.FeedBacks) error {
 	return f.db.CreateFeedback(feedback)
 }

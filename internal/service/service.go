@@ -9,7 +9,6 @@ import (
 type Feedback interface {
 	GetAllCountries() ([]types.Countries, error)
 	GetCountryCities(countryId int) ([]types.Cities, error)
-	GetAllLocalServices(cityID int) ([]types.Services, error)
 	ValidateImage(size int64) error
 	SaveImage(file io.Reader, fileName string, feedback *types.FeedBacks) (*types.FeedBacks, error)
 	CreateFeedback(feedback *types.FeedBacks) error

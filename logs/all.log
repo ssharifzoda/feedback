@@ -36,3 +36,10 @@
 {"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
 {"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
 {"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}

@@ -52,25 +52,6 @@ func (h *Handler) GetCountryCities(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func (h *Handler) getAllLocalServices(w http.ResponseWriter, r *http.Request) {
-	city := r.URL.Query().Get("cityid")
-	cityId, _ := strconv.Atoi(city)
-	services, err := h.service.Feedback.GetAllLocalServices(cityId)
-	if err != nil {
-		NewErrorResponse(w, 500, internalError)
-	}
-	data, err := json.Marshal(services)
-	if err != nil {
-		h.log.Print(err)
-		return
-	}
-	w.Header().Set("Content-Type", "application/json")
-	_, err = w.Write(data)
-	if err != nil {
-		h.log.Print(err)
-		return
-	}
-}
 func (h *Handler) CreateFeedback(w http.ResponseWriter, r *http.Request) {
 	var feedback types.FeedBacks
 	data := r.FormValue("feedback")

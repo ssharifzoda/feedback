@@ -21,9 +21,8 @@ type LocalServices struct {
 }
 
 type FeedBacks struct {
-	UserId    int    `json:"user_id"`
-	CountryId int    `json:"country_id"`
-	CityId    int    `json:"city_id"`
-	Massage   string `json:"massage"` //maybe chang area name to description
-	Photo     string `json:"photo"`
+	UserId  int    `json:"user_id"`
+	CityId  int    `json:"city_id"`
+	Massage string `json:"massage"` //maybe chang area name to description
+	Photo   string `json:"photo"`
 }
