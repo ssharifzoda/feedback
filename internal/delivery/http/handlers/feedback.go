@@ -17,24 +17,26 @@ const (
 )
 
 func (h *Handler) getAllCountries(w http.ResponseWriter, r *http.Request) {
+	log := logging.GetLogger()
 	countries, err := h.service.Feedback.GetAllCountries()
 	if err != nil {
 		NewErrorResponse(w, 500, internalError)
 	}
 	data, err := json.Marshal(countries)
 	if err != nil {
-		h.log.Print(err)
+		log.Print(err)
 		return
 	}
 	w.Header().Set("Content-Type", "application/json")
 	_, err = w.Write(data)
 	if err != nil {
-		h.log.Print(err)
+		log.Print(err)
 		return
 	}
 }
 
 func (h *Handler) GetCountryCities(w http.ResponseWriter, r *http.Request) {
+	log := logging.GetLogger()
 	country := r.URL.Query().Get("countryid")
 	countryId, _ := strconv.Atoi(country)
 	countryCities, err := h.service.Feedback.GetCountryCities(countryId)
@@ -43,13 +45,13 @@ func (h *Handler) GetCountryCities(w http.ResponseWriter, r *http.Request) {
 	}
 	data, err := json.Marshal(countryCities)
 	if err != nil {
-		h.log.Print(err)
+		log.Print(err)
 		return
 	}
 	w.Header().Set("Content-Type", "application/json")
 	_, err = w.Write(data)
 	if err != nil {
-		h.log.Print(err)
+		log.Print(err)
 		return
 	}
 }

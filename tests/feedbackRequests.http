@@ -4,10 +4,11 @@ Accept: application/json
 
 
 
-
 ### Get coutry cities
-GET localhost:8080/countlist?countryid=1
+GET localhost:8080/country-cities?countryid=1
 Accept: application/json
+
+
 
 
 ### Creat Feedback
@@ -21,8 +22,8 @@ Content-Type: application/json
 
 {
   "user_id": 1,
-  "city_id": 2,
-  "massage": "StripClub"
+  "city_id": 1,
+  "massage": "Я хочу, чтобы в моем городе открылся бар для инвалидов"
 }
 --WebAppBoundary
 Content-Disposition: form-data; name="image"; filename="t.jpg"
@@ -35,3 +36,19 @@ Content-Type: application/octet-stream
 
 < D:\Мои фотки\test.jpg
 --WebAppBoundary--
+
+
+###Creat feedback just with text
+POST localhost:8080/
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+
+--WebAppBoundary
+Content-Disposition: form-data; name="feedback"
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "city_id": 1,
+  "massage": "Я хочу, чтобы в моем городе открылся бар для инвалидов"
+}

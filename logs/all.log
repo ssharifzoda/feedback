@@ -133,3 +133,75 @@
 {"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
 {"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
 {"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип character varying[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип character varying[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"feedback.go: 77","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"ОШИБКА: столбец \"photo\" имеет тип text[], а выражение - record (SQLSTATE 42804)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 27","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc0001a1050 \u003cnil\u003e 2 0xc0001f6fc0 0}"}

@@ -1,6 +1,9 @@
 package types
 
-import "time"
+import (
+	"github.com/lib/pq"
+	"time"
+)
 
 type Countries struct {
 	Id   int    `json:"id"`
@@ -18,18 +21,14 @@ type Services struct {
 	Description string `json:"description"`
 }
 
-type LocalServices struct {
-	Service []Services
-}
-
 type Feedbacks struct {
-	ID        int       `json:"id"`
-	UserId    int       `json:"user_id"`
-	CityId    int       `json:"city_id"`
-	Massage   string    `json:"massage"` //maybe chang area name to description
-	Status    bool      `json:"status"`
-	Photo     []string  `json:"photo"`
-	CreatedAt time.Time `json:"created_at"`
+	ID        int            `json:"id"`
+	UserId    int            `json:"user_id"`
+	CityId    int            `json:"city_id"`
+	Massage   string         `json:"massage"` //maybe chang area name to description
+	Status    bool           `json:"status"`
+	Photo     pq.StringArray `gorm:"type:text[]"`
+	CreatedAt time.Time      `json:"created_at"`
 }
 
 type FeedBackTG struct {
