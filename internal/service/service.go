@@ -3,23 +3,29 @@ package service
 import (
 	"feedback/internal/database"
 	"feedback/internal/types"
-	"io"
+	"mime/multipart"
 )
 
 type Feedback interface {
 	GetAllCountries() ([]types.Countries, error)
 	GetCountryCities(countryId int) ([]types.Cities, error)
 	ValidateImage(size int64) error
-	SaveImage(file io.Reader, fileName string, feedback *types.FeedBacks) (*types.FeedBacks, error)
-	CreateFeedback(feedback *types.FeedBacks) error
+	SaveImage(reader *multipart.Form, feedback *types.Feedbacks) (*types.Feedbacks, error)
+	CreateFeedback(feedback *types.Feedbacks) (int, error)
+}
+
+type Bot interface {
+	UpdateFeedbackStatus(feedbackId int) error
 }
 
 type Service struct {
 	Feedback
+	Bot
 }
 
 func NewService(db *database.Database, imagPath string) *Service {
 	return &Service{
 		Feedback: NewFeedbackService(db, imagPath),
+		Bot:      NewBotService(db),
 	}
 }

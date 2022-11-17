@@ -21,9 +21,14 @@ Content-Type: application/json
 
 {
   "user_id": 1,
-  "city_id": 1,
-  "massage": "Good"
+  "city_id": 2,
+  "massage": "StripClub"
 }
+--WebAppBoundary
+Content-Disposition: form-data; name="image"; filename="t.jpg"
+Content-Type: application/octet-stream
+
+< D:\Мои фотки\test.jpg
 --WebAppBoundary
 Content-Disposition: form-data; name="image"; filename="t.jpg"
 Content-Type: application/octet-stream

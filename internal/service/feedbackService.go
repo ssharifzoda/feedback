@@ -6,6 +6,7 @@ import (
 	"feedback/pkg/logging"
 	"github.com/pkg/errors"
 	"io"
+	"mime/multipart"
 	"os"
 	"path/filepath"
 )
@@ -13,6 +14,7 @@ import (
 type FeedbackService struct {
 	db            database.Feedback
 	imagesDirPath string
+	log           *logging.Logger
 }
 
 var ErrInvalidData = errors.New("invalid data")
@@ -29,30 +31,41 @@ func (f *FeedbackService) GetCountryCities(countryId int) ([]types.Cities, error
 	return f.db.GetCountryCities(countryId)
 }
 
-func (f *FeedbackService) CreateFeedback(feedback *types.FeedBacks) error {
+func (f *FeedbackService) CreateFeedback(feedback *types.Feedbacks) (int, error) {
 	return f.db.CreateFeedback(feedback)
 }
 
-func (f *FeedbackService) SaveImage(file io.Reader, fileName string, feedback *types.FeedBacks) (*types.FeedBacks, error) {
-	lg := logging.GetLogger()
-	path := filepath.Join(f.imagesDirPath, fileName)
-	imageFile, err := os.Create(path)
-	if err != nil {
-		lg.Println(err)
-		return nil, err
+func (f *FeedbackService) SaveImage(reader *multipart.Form, feedback *types.Feedbacks) (*types.Feedbacks, error) {
+	log := logging.GetLogger()
+	files := reader.File["image"]
+	for i, _ := range files {
+		file, err := files[i].Open()
+		defer file.Close()
+		if err != nil {
+			log.Println(err)
+			return nil, err
+		}
+		if err := f.ValidateImage(files[i].Size); err != nil {
+			log.Println(err)
+			return nil, err
+		}
+		path := filepath.Join(f.imagesDirPath, files[i].Filename)
+		feedback.Photo = append(feedback.Photo, path)
+		dst, err := os.Create(path)
+		defer dst.Close()
+		if err != nil {
+			log.Println(err)
+			return nil, err
+		}
+		if _, err := io.Copy(dst, file); err != nil {
+			return nil, err
+		}
 	}
-	defer imageFile.Close()
-
-	_, err = io.Copy(imageFile, file)
-	if err != nil {
-		lg.Println(err)
-		return nil, err
-	}
-	feedback.Photo = path
 	return feedback, nil
 }
 func (f *FeedbackService) ValidateImage(size int64) error {
 	if size > 2_000_000_000 {
+		f.log.Info(ErrInvalidData)
 		return ErrInvalidData
 	}
 	return nil

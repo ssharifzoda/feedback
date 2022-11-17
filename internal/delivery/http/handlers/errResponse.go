@@ -7,6 +7,6 @@ import (
 
 func NewErrorResponse(w http.ResponseWriter, statusCode int, massage string) {
 	logger := logging.GetLogger()
-	logger.Error(massage)
+	logger.Println(massage)
 	http.Error(w, massage, statusCode)
 }

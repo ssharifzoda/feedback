@@ -29,6 +29,7 @@ create table feedbacks(
     user_id bigint not null,
     city_id int references cities,
     massage text not null,
-    photo text,
+    photo text [],
+    status boolean not null default false,
     created_at timestamptz default current_timestamp
 );

@@ -2,8 +2,10 @@ package handlers
 
 import (
 	"encoding/json"
+	"feedback/internal/botSystem"
 	"feedback/internal/types"
-	"log"
+	"feedback/pkg/logging"
+	"github.com/spf13/viper"
 	"net/http"
 	"strconv"
 )
@@ -53,38 +55,47 @@ func (h *Handler) GetCountryCities(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) CreateFeedback(w http.ResponseWriter, r *http.Request) {
-	var feedback types.FeedBacks
+	log := logging.GetLogger()
+	var feedback types.Feedbacks
+	var feedbackTg types.FeedBackTG
 	data := r.FormValue("feedback")
 	err := json.Unmarshal([]byte(data), &feedback)
 	if err != nil {
+		log.Println(err)
 		NewErrorResponse(w, 400, badRequest)
 		return
 	}
-	file, header, err := r.FormFile("image")
+	reader := r.MultipartForm
+	item, err := h.service.Feedback.SaveImage(reader, &feedback)
 	if err != nil {
-		NewErrorResponse(w, 400, badRequest)
-		return
-	}
-	err = h.service.Feedback.ValidateImage(header.Size)
-	if err != nil {
-		NewErrorResponse(w, 400, badRequest)
-		return
-	}
-	filename := header.Filename
-	item, err := h.service.Feedback.SaveImage(file, filename, &feedback)
-	if err != nil {
+		log.Println(err)
 		NewErrorResponse(w, 500, err.Error())
 		return
 	}
-	err = h.service.Feedback.CreateFeedback(item)
+	id, err := h.service.Feedback.CreateFeedback(item)
 	if err != nil {
+		log.Println(err)
 		NewErrorResponse(w, 500, internalError)
 		return
 	}
+	feedbackTg.Massage = feedback.Massage
+	feedbackTg.City = GetCitiByID(feedback.CityId)
+	feedbackTg.FeedbackId = id
+	feedbackTg.ChatId = viper.GetInt("chatid")
+	feedbackTg.PhotoPath = feedback.Photo
+	go botSystem.Sender(feedbackTg)
 	w.Header().Set("Content-Type", "application/json")
 	_, err = w.Write([]byte(thanks))
 	if err != nil {
 		log.Print(err)
 		return
 	}
+}
+
+func GetCitiByID(id int) string {
+	city := map[int]string{
+		1: "Душанбе",
+		2: "Худжанд",
+	}
+	return city[id]
 }

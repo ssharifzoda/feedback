@@ -43,3 +43,93 @@
 {"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
 {"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
 {"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 32","func":"feedback/internal/botSystem.RunBot()","level":"fatal","msg":"Invalid token: Not Found"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 35","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 35","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 35","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 35","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 35","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc00019ccf0 \u003cnil\u003e 2 0xc0001e4a80 0}"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: отношение \"feed_backs\" не существует (SQLSTATE 42P01)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: отношение \"feed_backs\" не существует (SQLSTATE 42P01)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"ОШИБКА: отношение \"feed_backs\" не существует (SQLSTATE 42P01)"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"botPostgres.go: 18","func":"feedback/internal/database.(*BotPostgres).UpdateFeedbackStatus()","level":"info","msg":"\u0026{0xc0001a8750 WHERE conditions required 0 0xc0001eefc0 0}"}
+{"file":"botLogicCommands.go: 24","func":"feedback/internal/botSystem.BotLogicCommands()","level":"info","msg":"WHERE conditions required"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"bad request"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"error","msg":"bad request"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedback.go: 70","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"http: multipart handled by ParseMultipartForm"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"bad request"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 22","func":"feedback/internal/botSystem.RunBot()","level":"fatal","msg":"Invalid token: Post \"https://api.telegram.org/bot5736734430:AAHaNHHWOjR4qN4Dqsp3X8fQROrM95xjrDw/getMe\": net/http: TLS handshake timeout"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 22","func":"feedback/internal/botSystem.RunBot()","level":"fatal","msg":"Invalid token: Post \"https://api.telegram.org/bot5736734430:AAHaNHHWOjR4qN4Dqsp3X8fQROrM95xjrDw/getMe\": dial tcp 149.154.167.220:443: connectex: An established connection was aborted by the software in your host machine."}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedback.go: 70","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"2"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"bad request"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackService.go: 53","func":"feedback/internal/service.(*FeedbackService).SaveImage()","level":"info","msg":"strconv.Atoi: parsing \"\": invalid syntax"}
+{"file":"feedbackService.go: 53","func":"feedback/internal/service.(*FeedbackService).SaveImage()","level":"info","msg":"strconv.Atoi: parsing \"\": invalid syntax"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"unsupported data type: \u0026[]: Table not set, please set it like: db.Model(\u0026user) or db.Table(\"users\")"}
+{"file":"feedback.go: 82","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"4"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 22","func":"feedback/internal/botSystem.RunBot()","level":"fatal","msg":"Invalid token: Post \"https://api.telegram.org/bot5736734430:AAHaNHHWOjR4qN4Dqsp3X8fQROrM95xjrDw/getMe\": dial tcp: lookup api.telegram.org: no such host"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackService.go: 55","func":"feedback/internal/service.(*FeedbackService).SaveImage()","level":"info","msg":"strconv.Atoi: parsing \"\": invalid syntax"}
+{"file":"feedbackService.go: 55","func":"feedback/internal/service.(*FeedbackService).SaveImage()","level":"info","msg":"strconv.Atoi: parsing \"\": invalid syntax"}
+{"file":"feedbackPostgres.go: 42","func":"feedback/internal/database.(*FeedbackPostgres).CreateFeedback()","level":"info","msg":"unsupported data type: \u0026[]: Table not set, please set it like: db.Model(\u0026user) or db.Table(\"users\")"}
+{"file":"feedback.go: 82","func":"feedback/internal/delivery/http/handlers.(*Handler).CreateFeedback()","level":"info","msg":"4"}
+{"file":"errResponse.go: 10","func":"feedback/internal/delivery/http/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"botPostgres.go: 18","func":"feedback/internal/database.(*BotPostgres).UpdateFeedbackStatus()","level":"info","msg":"\u0026{0xc00019c750 WHERE conditions required 0 0xc0002b6e00 0}"}
+{"file":"botLogicCommands.go: 24","func":"feedback/internal/botSystem.BotLogicCommands()","level":"info","msg":"WHERE conditions required"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 26","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
