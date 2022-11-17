@@ -6,6 +6,7 @@ import (
 	"feedback/pkg/logging"
 	"fmt"
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api/v5"
+	"github.com/spf13/viper"
 	"log"
 	"os"
 )
@@ -23,7 +24,7 @@ func RunBot(s *service.Service, ch chan types.FeedBackTG) {
 	if err != nil {
 		logger.Fatalf("Invalid token: %s", err)
 	}
-	bot.Debug = false
+	bot.Debug = viper.GetBool("bot.debug")
 	logger.Printf("Authorized on account %s", bot.Self.UserName)
 	var ucfg = tgbotapi.NewUpdate(0)
 	ucfg.Timeout = 60
@@ -31,7 +32,7 @@ func RunBot(s *service.Service, ch chan types.FeedBackTG) {
 	for {
 		select {
 		case update := <-updates:
-			BotLogicCommands(update, s)
+			BotLogicCommands(bot, update, s)
 		case r := <-ch:
 			msg := tgbotapi.NewMessage(int64(r.ChatId), Response(r))
 			_, err := bot.Send(msg)

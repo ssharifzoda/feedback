@@ -23,5 +23,6 @@ func (h *Handler) InitRoutes() *mux.Router {
 	handlers.HandleFunc("/countries", h.getAllCountries).Methods(methodGet)
 	handlers.HandleFunc("/country-cities", h.GetCountryCities).Methods(methodGet)
 	handlers.HandleFunc("/", h.CreateFeedback).Methods(methodPost)
+	//handlers.HandleFunc("/all-feedbacks", h.getAllFeedbacks)
 	return handlers
 }

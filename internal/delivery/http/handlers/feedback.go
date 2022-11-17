@@ -94,6 +94,25 @@ func (h *Handler) CreateFeedback(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
+//func (h *Handler) getAllFeedbacks(w http.ResponseWriter, r *http.Request) {
+//	log := logging.GetLogger()
+//	feedbacks, err := h.service.Feedback.GetAllFeedbacks(page, limit, offset, term)
+//	if err != nil {
+//		NewErrorResponse(w, 500, internalError)
+//	}
+//	data, err := json.Marshal(countries)
+//	if err != nil {
+//		log.Print(err)
+//		return
+//	}
+//	w.Header().Set("Content-Type", "application/json")
+//	_, err = w.Write(data)
+//	if err != nil {
+//		log.Print(err)
+//		return
+//	}
+//}
+
 func GetCitiByID(id int) string {
 	city := map[int]string{
 		1: "Душанбе",
