@@ -23,7 +23,7 @@ Content-Type: application/json
 {
   "user_id": 1,
   "city_id": 1,
-  "massage": "Я хочу, чтобы в моем городе открылся бар для инвалидов"
+  "massage": "Я ничего не хочу, оставьте меня в покое(прыщавый подросток)"
 }
 --WebAppBoundary
 Content-Disposition: form-data; name="image"; filename="t.jpg"
@@ -50,5 +50,5 @@ Content-Type: application/json
 {
   "user_id": 1,
   "city_id": 1,
-  "massage": "Я хочу, чтобы в моем городе открылся бар для инвалидов"
+  "massage": "У меня трисомия 21 пары"
 }
