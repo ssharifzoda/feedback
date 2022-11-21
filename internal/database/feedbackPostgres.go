@@ -44,3 +44,21 @@ func (f *FeedbackPostgres) CreateFeedback(fd *types.Feedbacks) (int, error) {
 	id := fd.ID
 	return id, result.Error
 }
+func (f *FeedbackPostgres) GetAllFeedback(limit, offset int, term string) ([]types.Feedbacks, error) {
+	log := logging.GetLogger()
+	var feedbacks []types.Feedbacks
+	if err := f.conn.Table("feedbacks").Where("status = ? limit ? offset ?", term, limit, offset).Find(&feedbacks); err.Error != nil {
+		log.Println(err)
+		return nil, err.Error
+	}
+	return feedbacks, nil
+}
+func (f *FeedbackPostgres) SearchFeedbacks(phoneNumber string, limit, offset int) ([]types.Feedbacks, error) {
+	log := logging.GetLogger()
+	var feedbacks []types.Feedbacks
+	if err := f.conn.Table("feedbacks").Where("user_phone = ? limit ? offset ?", phoneNumber, limit, offset).Find(&feedbacks); err.Error != nil {
+		log.Println(err)
+		return nil, err.Error
+	}
+	return feedbacks, nil
+}

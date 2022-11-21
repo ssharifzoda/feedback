@@ -21,7 +21,7 @@ Content-Disposition: form-data; name="feedback"
 Content-Type: application/json
 
 {
-  "user_id": 1,
+  "user_phone": "992887585005",
   "city_id": 2,
   "massage": "Хочу у себя в городе видеть нормальных людей"
 }
@@ -54,7 +54,18 @@ Content-Disposition: form-data; name="feedback"
 Content-Type: application/json
 
 {
-  "user_id": 1,
+  "user_phone": "992887585005",
   "city_id": 1,
   "massage": "У меня трисомия 21 пары"
 }
+
+
+
+### Get all feedbacks
+GET localhost:8080/all-feedbacks?page=1&limit=4&term=false
+Accept: application/json
+
+
+###Search feedbacks by user_phone
+GET localhost:8080/search?page=1&limit=3&phone=992887585005
+Accept: application/json

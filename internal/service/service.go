@@ -12,6 +12,8 @@ type Feedback interface {
 	ValidateImage(size int64) error
 	SaveImage(reader *multipart.Form, feedback *types.Feedbacks) (*types.Feedbacks, error)
 	CreateFeedback(feedback *types.Feedbacks) (int, error)
+	GetAllFeedbacks(page, limit int, term string) ([]types.Feedbacks, error)
+	SearchFeedbacks(phoneNumber string, page, limit int) ([]types.Feedbacks, error)
 }
 
 type Bot interface {

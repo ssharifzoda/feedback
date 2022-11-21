@@ -9,6 +9,8 @@ type Feedback interface {
 	GetAllCountries() ([]types.Countries, error)
 	GetCountryCities(countryId int) ([]types.Cities, error)
 	CreateFeedback(feedback *types.Feedbacks) (int, error)
+	GetAllFeedback(limit, offset int, term string) ([]types.Feedbacks, error)
+	SearchFeedbacks(phoneNumber string, limit, offset int) ([]types.Feedbacks, error)
 }
 
 type Bot interface {

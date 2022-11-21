@@ -23,7 +23,7 @@ type Services struct {
 
 type Feedbacks struct {
 	ID        int            `json:"id"`
-	UserId    int            `json:"user_id"`
+	UserPhone string         `json:"user_phone"`
 	CityId    int            `json:"city_id"`
 	Massage   string         `json:"massage"` //maybe chang area name to description
 	Status    bool           `json:"status"`

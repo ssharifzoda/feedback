@@ -63,8 +63,19 @@ func (f *FeedbackService) SaveImage(reader *multipart.Form, feedback *types.Feed
 	}
 	return feedback, nil
 }
+
+func (f *FeedbackService) GetAllFeedbacks(pageNo, limit int, term string) ([]types.Feedbacks, error) {
+	offset := (pageNo * limit) - limit
+	return f.db.GetAllFeedback(limit, offset, term)
+}
+
+func (f *FeedbackService) SearchFeedbacks(phoneNumber string, pageNo, limitNo int) ([]types.Feedbacks, error) {
+	offset := (pageNo * limitNo) - limitNo
+	return f.db.SearchFeedbacks(phoneNumber, limitNo, offset)
+}
+
 func (f *FeedbackService) ValidateImage(size int64) error {
-	if size > 2_000_000_000 {
+	if size > 5_000_000_000 {
 		f.log.Info(ErrInvalidData)
 		return ErrInvalidData
 	}

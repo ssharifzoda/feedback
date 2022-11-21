@@ -205,3 +205,56 @@
 {"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
 {"file":"botSystem.go: 27","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
 {"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc0001a1050 \u003cnil\u003e 2 0xc0001f6fc0 0}"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc00019cf30 \u003cnil\u003e 2 0xc0001f4e00 0}"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc00006af30 \u003cnil\u003e 2 0xc0002a0c40 0}"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"botLogicCommands.go: 41","func":"feedback/internal/botSystem.ValidateResponseStatus()","level":"info","msg":"error Atoi func"}
+{"file":"botLogicCommands.go: 41","func":"feedback/internal/botSystem.ValidateResponseStatus()","level":"info","msg":"error Atoi func"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"botLogicCommands.go: 41","func":"feedback/internal/botSystem.ValidateResponseStatus()","level":"info","msg":"error Atoi func"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc00023aa20 \u003cnil\u003e 2 0xc0002381c0 0}"}
+{"file":"botLogicCommands.go: 41","func":"feedback/internal/botSystem.ValidateResponseStatus()","level":"info","msg":"error Atoi func"}
+{"file":"botLogicCommands.go: 41","func":"feedback/internal/botSystem.ValidateResponseStatus()","level":"info","msg":"error Atoi func"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc00030a870 \u003cnil\u003e 2 0xc00034a000 0}"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc00030aea0 \u003cnil\u003e 2 0xc00034a1c0 0}"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 52","func":"feedback/internal/database.(*FeedbackPostgres).GetAllFeedback()","level":"info","msg":"\u0026{0xc0001c0900 ОШИБКА: ошибка синтаксиса (примерное положение: \"FROM\") (SQLSTATE 42601) 0 0xc0001f4fc0 0}"}
+{"file":"errResponse.go: 10","func":"feedback/internal/api/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"feedbackPostgres.go: 52","func":"feedback/internal/database.(*FeedbackPostgres).GetAllFeedback()","level":"info","msg":"\u0026{0xc0001c0900 ОШИБКА: ошибка синтаксиса (примерное положение: \"FROM\") (SQLSTATE 42601) 0 0xc0002861c0 0}"}
+{"file":"errResponse.go: 10","func":"feedback/internal/api/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 52","func":"feedback/internal/database.(*FeedbackPostgres).GetAllFeedback()","level":"info","msg":"\u0026{0xc0001c0750 ОШИБКА: ошибка синтаксиса (примерное положение: \"FROM\") (SQLSTATE 42601) 0 0xc0001f8540 0}"}
+{"file":"errResponse.go: 10","func":"feedback/internal/api/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"fatal","msg":"Invalid token: Post \"https://api.telegram.org/bot5736734430:AAHaNHHWOjR4qN4Dqsp3X8fQROrM95xjrDw/getMe\": net/http: TLS handshake timeout"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 52","func":"feedback/internal/database.(*FeedbackPostgres).GetAllFeedback()","level":"info","msg":"\u0026{0xc0001c0750 ОШИБКА: ошибка синтаксиса (примерное положение: \"select\") (SQLSTATE 42601) 0 0xc0001f4540 0}"}
+{"file":"errResponse.go: 10","func":"feedback/internal/api/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"fatal","msg":"Invalid token: Post \"https://api.telegram.org/bot5736734430:AAHaNHHWOjR4qN4Dqsp3X8fQROrM95xjrDw/getMe\": dial tcp: lookup api.telegram.org: no such host"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 25","func":"feedback/internal/botSystem.RunBot()","level":"fatal","msg":"Invalid token: Post \"https://api.telegram.org/bot5736734430:AAHaNHHWOjR4qN4Dqsp3X8fQROrM95xjrDw/getMe\": dial tcp: lookup api.telegram.org: no such host"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 60","func":"feedback/internal/database.(*FeedbackPostgres).SearchFeedbacks()","level":"info","msg":"\u0026{0xc0001c06c0 ОШИБКА: столбец \"user_phone\" не существует (SQLSTATE 42703) 0 0xc00007cfc0 0}"}
+{"file":"errResponse.go: 10","func":"feedback/internal/api/handlers.NewErrorResponse()","level":"info","msg":"internal error"}
+{"file":"postgres.go: 38","func":"feedback/internal/database.NewPostgresGorm()","level":"info","msg":"Postgres Connection success:  localhost"}
+{"file":"botSystem.go: 28","func":"feedback/internal/botSystem.RunBot()","level":"info","msg":"Authorized on account feedback_srv_bot"}
+{"file":"feedbackPostgres.go: 32","func":"feedback/internal/database.(*FeedbackPostgres).GetCountryCities()","level":"info","msg":"\u0026{0xc000174bd0 \u003cnil\u003e 2 0xc0001ac540 0}"}

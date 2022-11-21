@@ -6,6 +6,7 @@ import (
 	"feedback/internal/types"
 	"feedback/pkg/logging"
 	"github.com/spf13/viper"
+	"log"
 	"net/http"
 	"strconv"
 )
@@ -94,24 +95,64 @@ func (h *Handler) CreateFeedback(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-//func (h *Handler) getAllFeedbacks(w http.ResponseWriter, r *http.Request) {
-//	log := logging.GetLogger()
-//	feedbacks, err := h.service.Feedback.GetAllFeedbacks(page, limit, offset, term)
-//	if err != nil {
-//		NewErrorResponse(w, 500, internalError)
-//	}
-//	data, err := json.Marshal(countries)
-//	if err != nil {
-//		log.Print(err)
-//		return
-//	}
-//	w.Header().Set("Content-Type", "application/json")
-//	_, err = w.Write(data)
-//	if err != nil {
-//		log.Print(err)
-//		return
-//	}
-//}
+func (h *Handler) getAllFeedbacks(w http.ResponseWriter, r *http.Request) {
+	log := logging.GetLogger()
+	page := r.URL.Query().Get("page")
+	pageNo, err := strconv.Atoi(page)
+	if err != nil {
+		log.Println(err)
+		NewErrorResponse(w, 400, "invalid params")
+	}
+	term := r.URL.Query().Get("term")
+	limit := r.URL.Query().Get("limit")
+	limitNo, err := strconv.Atoi(limit)
+	if err != nil {
+		log.Println(err)
+		NewErrorResponse(w, 400, "invalid params")
+	}
+	feedbacks, err := h.service.Feedback.GetAllFeedbacks(pageNo, limitNo, term)
+	if err != nil {
+		NewErrorResponse(w, 500, internalError)
+	}
+	data, err := json.Marshal(feedbacks)
+	if err != nil {
+		log.Print(err)
+		return
+	}
+	w.Header().Set("Content-Type", "application/json")
+	_, err = w.Write(data)
+	if err != nil {
+		log.Print(err)
+		return
+	}
+}
+
+func (h *Handler) searchFeedbacks(w http.ResponseWriter, r *http.Request) {
+	phoneNumber := r.URL.Query().Get("phone")
+	page := r.URL.Query().Get("page")
+	pageNo, err := strconv.Atoi(page)
+	if err != nil {
+		log.Println(err)
+		NewErrorResponse(w, 400, "invalid params")
+	}
+	limit := r.URL.Query().Get("limit")
+	limitNo, err := strconv.Atoi(limit)
+	feedbacks, err := h.service.Feedback.SearchFeedbacks(phoneNumber, pageNo, limitNo)
+	if err != nil {
+		NewErrorResponse(w, 500, internalError)
+	}
+	data, err := json.Marshal(feedbacks)
+	if err != nil {
+		log.Print(err)
+		return
+	}
+	w.Header().Set("Content-Type", "application/json")
+	_, err = w.Write(data)
+	if err != nil {
+		log.Print(err)
+		return
+	}
+}
 
 func GetCitiByID(id int) string {
 	city := map[int]string{

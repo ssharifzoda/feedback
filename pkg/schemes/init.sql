@@ -26,7 +26,7 @@ create table cities(
 
 create table feedbacks(
     id bigserial primary key,
-    user_id bigint not null,
+    user_phone text not null,
     city_id int references cities,
     massage text not null,
     photo text[],

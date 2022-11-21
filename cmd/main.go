@@ -1,9 +1,9 @@
 package main
 
 import (
+	"feedback/internal/api/handlers"
 	"feedback/internal/botSystem"
 	"feedback/internal/database"
-	"feedback/internal/delivery/http/handlers"
 	"feedback/internal/server"
 	"feedback/internal/service"
 	"feedback/pkg/logging"
